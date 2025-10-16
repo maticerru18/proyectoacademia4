@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Gourmet Digital - Cursos de Cocina Online</title>
+    <meta name="description" content="Aprende cocina profesional desde casa con los mejores chefs del mundo. Más de 20 cursos online de cocina, pastelería y coctelería.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind Animations Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in',
+                        'slide-down': 'slideDown 0.5s ease-out',
+                        'slide-up': 'slideUp 0.3s ease-out',
+                        'pulse-slow': 'pulse 3s infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideDown: {
+                            '0%': { transform: 'translateY(-10px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(10px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Promo Bar -->
+    <div class="promo-bar">
+        <div class="promo-text">
+            🔥 ¡40% OFF en todos los cursos! Aprovechá esta oferta exclusiva comprando en las próximas 48 horas 🔥 • Repostería y Decoración • Coctelería Clásica • Barista Training • Panadería Artesanal • Sushi Rolls • Cocina Coreana • Cocina Internacional • Cocina Vegana • Chocolatería • Pastelería Vegana • Panadería Sin Gluten • Cocina Árabe • Cocina Nikkei • Cocina India • Cocina Brasilera • Cocina Mexicana • Cocina Francesa • Empanadas y Rellenos • Coctelería de Autor • Tortas Modernas • Repostería Casera • Mini Donas •
+        </div>
+    </div>
+    
+    <!-- Navbar Fija -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="nav-logo-link hover:scale-105 transition-transform duration-300">
+                    <img src="images/logo.png" alt="Academia Gourmet Digital" class="logo-img">
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle hover:opacity-80 transition-opacity duration-200" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#cursos" class="nav-link dropdown-toggle">
+                        Cursos <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-category">
+                                <h4>Cocina Internacional</h4>
+                                <a href="cursos.html#cocina-arabe">Cocina Árabe</a>
+                                <a href="cursos.html#cocina-nikkei">Cocina Nikkei</a>
+                                <a href="cursos.html#cocina-india">Cocina India</a>
+                                <a href="cursos.html#cocina-brasilera">Cocina Brasilera</a>
+                                <a href="cursos.html#cocina-mexicana">Cocina Mexicana</a>
+                                <a href="cursos.html#cocina-francesa">Cocina Francesa</a>
+                                <a href="cursos.html#cocina-coreana">Cocina Coreana</a>
+                                <a href="cursos.html#cocina-internacional">Cocina Internacional</a>
+                            </div>
+                            <div class="dropdown-category">
+                                <h4>Pastelería & Repostería</h4>
+                                <a href="cursos.html#pasteleria-vegana">Pastelería Vegana</a>
+                                <a href="cursos.html#chocolateria">Chocolatería</a>
+                                <a href="cursos.html#reposteria-vegana">Repostería Vegana</a>
+                                <a href="cursos.html#pasteleria-sin-gluten">Pastelería Sin Gluten</a>
+                                <a href="cursos.html#tortas-modernas">Tortas Modernas</a>
+                                <a href="cursos.html#reposteria-decoracion">Repostería y Decoración</a>
+                                <a href="cursos.html#reposteria-casera">Repostería Casera</a>
+                                <a href="cursos.html#mini-donas">Mini Donas</a>
+                            </div>
+                            <div class="dropdown-category">
+                                <h4>Especialidades</h4>
+                                <a href="cursos.html#cocina-vegana">Cocina Vegana</a>
+                                <a href="cursos.html#empanadas-rellenos">Empanadas
+                                <a href="cursos.html#sushi-rolls">Sushi Rolls</a>
+                                <a href="cursos.html#panaderia-artesanal">Panadería Artesanal</a>
+                                <a href="cursos.html#panaderia-sin-gluten">Panadería Sin Gluten</a>
+                                <a href="cursos.html#cocteleria-clasica">Coctelería Clásica</a>
+                                <a href="cursos.html#cocteleria-autor">Coctelería de Autor</a>
+                                <a href="cursos.html#barista-training">Barista Training</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonios" class="nav-link">Testimonios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faq" class="nav-link">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </li>
+                <!-- Social Media Icons -->
+                <li class="nav-item">
+                    <div class="social-icons flex items-center gap-4">
+                        <a href="https://instagram.com" target="_blank" class="text-[20px] hover:text-[#FF6B35] transition-all duration-300 animate-[fadeIn_0.3s_ease-in] hover:scale-110">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="text-[20px] hover:text-[#FF6B35] transition-all duration-300 animate-[fadeIn_0.3s_ease-in_0.1s] hover:scale-110">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" class="text-[20px] hover:text-[#FF6B35] transition-all duration-300 animate-[fadeIn_0.3s_ease-in_0.2s] hover:scale-110">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-video">
+            <video autoplay muted loop playsinline>
+                <source src="images/video.mp4" type="video/mp4">
+                <!-- Fallback text -->
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title animate-[slideDown_0.7s_ease-out]">Aprende desde Casa con los Mejores Chefs del Mundo</h1>
+                <p class="hero-subtitle animate-[slideDown_0.7s_ease-out_0.2s] opacity-0 [animation-fill-mode:forwards]">Más de 20 cursos de cocina profesional, pastelería y coctelería — 100% Online</p>
+                <div class="hero-cta-group">
+                    <a href="#filtros-cursos" class="btn btn-primary hero-cta animate-[slideUp_0.5s_ease-out_0.4s] opacity-0 [animation-fill-mode:forwards] hover:scale-105 transition-transform duration-300">Ver Todos los Cursos</a>
+                    <a href="https://wa.me/1234567890?text=Hola%2C%20quiero%20hacer%20una%20consulta%20sobre%20los%20cursos" target="_blank" rel="noopener" class="btn btn-whatsapp hero-cta animate-[slideUp_0.5s_ease-out_0.5s] opacity-0 [animation-fill-mode:forwards]">
+                        <i class="fab fa-whatsapp"></i>
+                        Consultanos
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Sección de Filtros de Cursos -->
+    <section class="courses-filter" id="filtros-cursos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Encuentra tu Curso Ideal</h2>
+                <p>Filtra por temática y descubre nuevas habilidades culinarias.</p>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active hover:scale-105 transition-all duration-300 animate-[fadeIn_0.3s_ease-in]" data-filter="featured">Destacados</button>
+                <button class="filter-btn hover:scale-105 transition-all duration-300 animate-[fadeIn_0.3s_ease-in_0.1s]" data-filter="main-course">Main Course</button>
+                <button class="filter-btn hover:scale-105 transition-all duration-300 animate-[fadeIn_0.3s_ease-in_0.2s]" data-filter="dessert">Dessert</button>
+                <button class="filter-btn hover:scale-105 transition-all duration-300 animate-[fadeIn_0.3s_ease-in_0.3s]" data-filter="pastry">Pastry</button>
+                <button class="filter-btn hover:scale-105 transition-all duration-300 animate-[fadeIn_0.3s_ease-in_0.4s]" data-filter="beverage">Beverage</button>
+                <button class="filter-btn hover:scale-105 transition-all duration-300 animate-[fadeIn_0.3s_ease-in_0.5s]" data-filter="vegan">Vegan</button>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Los cursos se cargarán dinámicamente con JavaScript -->
+            </div>
+            
+            <div class="view-all-container">
+                <a href="cursos.html" class="btn btn-secondary">Ver Todos los Cursos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo que dicen nuestros alumnos</h2>
+                <p>Historias de éxito de nuestra comunidad</p>
+            </div>
+            
+            <div class="testimonials-carousel">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-author">
+                            <img src="images/img.webp" alt="María Contreras" class="author-image">
+                            <h4>María Contreras</h4>
+                            <span class="author-specialty">Chef Profesional</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Los cursos son increíbles. He aprendido técnicas que jamás pensé dominar. Los instructores son profesionales de primera clase."</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-author">
+                            <img src="images/juan.jpg" alt="Juan Rodríguez" class="author-image">
+                            <h4>Juan Rodríguez</h4>
+                            <span class="author-specialty">Pastelero</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"La calidad de los videos y las explicaciones son excepcionales. Perfecto para aprender desde casa con horarios flexibles."</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-author">
+                            <img src="images/images (3).jpg" alt="Mirtha Castillo" class="author-image">
+                            <h4>Mirtha Castillo</h4>
+                            <span class="author-specialty">Panadera</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Excelente plataforma educativa. Los cursos están muy bien estructurados y el contenido es de alta calidad profesional."</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-author">
+                            <img src="images/carlosmendoza.webp" alt="Carlos Mendoza" class="author-image">
+                            <h4>Carlos Mendoza</h4>
+                            <span class="author-specialty">Bartender Profesional</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Me encanta la variedad de cursos disponibles. He tomado varios y todos superaron mis expectativas completamente."</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel Navigation -->
+            <div class="carousel-nav">
+                <button class="carousel-btn prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Preguntas Frecuentes -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Encuentra respuestas a las dudas más comunes sobre nuestros cursos</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cómo funcionan los cursos online?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Los cursos son 100% online y puedes acceder a ellos en cualquier momento. Cada curso incluye videos detallados, material descargable y acceso ilimitado al contenido. Puedes aprender a tu propio ritmo y revisar las lecciones las veces que necesites.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Necesito experiencia previa en cocina?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, nuestros cursos están diseñados para todos los niveles. Tenemos cursos básicos para principiantes y cursos avanzados para quienes ya tienen experiencia. Cada curso especifica el nivel recomendado en su descripción.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Qué certificación recibo al completar un curso?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Al completar cada curso, recibirás un certificado digital que acredita tu formación. Nuestros certificados son reconocidos en el sector gastronómico y pueden ser agregados a tu currículum profesional.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Por cuánto tiempo tengo acceso al curso?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Una vez inscrito en un curso, tienes acceso ilimitado al contenido. Puedes ver las lecciones cuando quieras y cuantas veces necesites, sin restricciones de tiempo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Ofrecen soporte durante el curso?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, contamos con un sistema de soporte que incluye foros de discusión, consultas directas con los instructores y asistencia técnica. Estamos comprometidos con tu aprendizaje y éxito en cada curso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Métricas Animadas -->
+    <section class="metrics" id="metricas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Logros</h2>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="metric-number" data-target="100">0</div>
+                    <div class="metric-label">Cursos Disponibles</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="metric-number" data-target="20">0</div>
+                    <div class="metric-label">Instructores Profesionales</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <div class="metric-number" data-target="95">0</div>
+                    <div class="metric-label">% de Alumnos Satisfechos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¡Comienza tu camino gourmet hoy mismo!</h2>
+                <p>Aprende desde casa con chefs expertos y recetas exclusivas.</p>
+                <a href="cursos.html" class="btn btn-primary">Ver Cursos Disponibles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>Academia Gourmet Digital</span>
+                    </div>
+                    <p>La mejor plataforma para aprender cocina profesional desde casa.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Información Legal</h4>
+                    <ul>
+                        <li><a href="#privacidad">Política de Privacidad</a></li>
+                        <li><a href="#terminos">Términos y Condiciones</a></li>
+                        <li><a href="#cookies">Política de Cookies</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> info@academiagourmetdigital.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ciudad, País</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Academia Gourmet Digital. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de WhatsApp Flotante -->
+    <div class="whatsapp-float" id="whatsapp-float">
+        <a href="https://wa.me/1234567890?text=Hola,%20quiero%20más%20información%20sobre%20los%20cursos" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
